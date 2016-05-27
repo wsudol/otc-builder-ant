@@ -23,7 +23,6 @@ sample-build:
     name: "sample-{{name}}"
     ui-pipeline: true
     configuration:
-     content: $file(pipeline.yml)
      env:
       SAMPLE_REPO: "sample-repo"
       CF_APP_NAME: "{{deploy.parameters.prod-app-name}}"
